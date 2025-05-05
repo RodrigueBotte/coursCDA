@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    background-color: darkgray;
+    text-align: center;
+    h1{
+        color: rgb(167, 70, 70);
+        font-family: titre;
+        text-decoration: underline;
+    }
+    p{
+        font-family: text;
+        font-size: 1.2rem;
+    }
+    img:not(:hover){
+        width: 20%;
+        height: auto;
+        transition: 0.2s;
+    }
+    .image:hover{
+        width: 25%;
+        height: auto;
+        transition: 0.2s;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        img:first-of-type{
+            width: 30%;
+            height: auto;
+        }
+        img:last-of-type{
+            width: 20%;
+            height: auto;
+        }
+    }
+}
+
+@font-face {
+    font-family: titre;
+    src: url(./assets/fonts/Galindo-Regular.ttf);
+}
+@font-face {
+    font-family: text;
+    src: url(./assets/fonts/AveriaLibre-Regular.ttf);
+}
