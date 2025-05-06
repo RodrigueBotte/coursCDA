@@ -1,5 +1,5 @@
-let hello = ("Hello World");
-console.log(hello);
+// let hello = ("Hello World");
+// console.log(hello);
 
 let maVoiture = {
     marque: "Peugeot",
@@ -37,10 +37,63 @@ else {
 
 if (quatre == 4) {
     console.log("quatre est égal à 4");
-    
 }
 else {
     console.log("quatre n'est pas égal à 4");
-
-    
 }
+
+let note = 15;
+if (note >= 16) {
+    noteUSA = "A";
+}
+else if (note >= 14) {
+    noteUSA = "B";
+}   
+else if (note >= 12) {
+    noteUSA = "C";
+}
+else if (note >= 10) {
+    noteUSA = "D";
+}
+else if (note >= 8) {
+    noteUSA = "E";
+}
+else {
+    noteUSA = "F";;
+}
+
+console.log("la note en France est " + note);
+console.log("la note aux USA est " + noteUSA);
+
+switch (noteUSA) {
+    case "A":
+        console.log("Excellent");
+        break;
+    case "B":
+        console.log("très bien");
+        break;
+    case "C":
+        console.log("Bien");
+        break;
+    case "D":
+        console.log("Passable");
+        break;
+    case "E":
+        console.log("Insuffisant");
+        break;
+    case "F":
+        console.log("Echec");
+        break;
+    default:
+        break;
+}
+
+document.getElementById("hello");
+console.log(hello);
+
+const bonjour = document.getElementById("bonjour");
+const btn = document.getElementById("toggle");
+
+btn.addEventListener("click", () => {
+    bonjour.classList.toggle("hidden");
+})
