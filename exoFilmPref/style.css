@@ -1,0 +1,115 @@
+*,
+:after,
+:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: classique;
+  header {
+    height: 20vh;
+    background-color: black;
+    background-image: url(./assets/images/La_Comte_1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    h1 {
+      padding: 2%;
+      color: white;
+      text-align: center;
+      font-size: 5rem;
+      text-shadow: white 0px 0px 10px;
+    }
+    div {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      background-color: white;
+      border-radius: 50px 50px;
+      border-color: transparent;
+      .switch {
+        width: 50px;
+        height: 30px;
+        background-color: white;
+        position: relative;
+        button {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+            border-style: none;
+        }
+      }
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 25px;
+    h2 {
+      font-size: 2rem;
+      text-decoration: underline;
+      text-align: center;
+    }
+    #afficheSynopsis {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+      padding-top: 50px;
+      img {
+        width: 600px;
+      }
+      #synopsis {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        p {
+          font-size: 1.5rem;
+        }
+        iframe {
+          width: 660px;
+          height: 415px;
+        }
+      }
+    }
+    #casting {
+      padding-top: 50px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          list-style: none;
+          gap: 10px;
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    #commentaire {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+@font-face {
+  font-family: elfique;
+  src: url(./assets/font/elvish\ ring\ nfi.ttf);
+}
+@font-face {
+  font-family: classique;
+  src: url(./assets/font/EagleLake-Regular.ttf);
+}
