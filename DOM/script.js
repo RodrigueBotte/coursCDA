@@ -97,3 +97,33 @@ const btn = document.getElementById("toggle");
 btn.addEventListener("click", () => {
     bonjour.classList.toggle("hidden");
 })
+
+const text = document.getElementById("text");
+const ajout = document.getElementById("ajout");
+const tache = document.getElementById("taches");
+
+ajout.addEventListener("click", () => {
+    console.log("yop");
+    const div = document.createElement("div");
+    const p = document.createElement("p");
+    const valid = document.createElement("button");
+    valid.innerHTML = "✔";
+    valid.addEventListener("click", () => {
+        p.classList.toggle("valid");
+    })
+    const supp = document.createElement("button");
+    supp.innerHTML = "X";
+    supp.addEventListener("click", () => {
+        tache.removeChild(div);
+        localStorage.removeItem("tache");
+    })
+    p.innerText = text.value;
+    div.appendChild(p);
+    div.appendChild(supp);
+    div.appendChild(valid);
+    tache.appendChild(div);
+    text.value = "";
+    localStorage.setItem("tache", tache.innerHTML);
+})
+
+tache.innerHTML = localStorage.getItem("tache");
