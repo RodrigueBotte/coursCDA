@@ -125,3 +125,70 @@ body {
   font-family: classique;
   src: url(./assets/font/EagleLake-Regular.ttf);
 }
+
+/* Css pour la connexion */
+#connexion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./assets/images/oneRing.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  text-align: center;
+  #loginForm {
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 350px;
+    height: 450px;
+    label {
+      color: white;
+      text-decoration: underline;
+      text-shadow: black 0px 0px 10px;
+    }
+    input {
+      background-color: rgba(255, 255, 255, 0.774);
+      border: none;
+      border-radius: 15px;
+      padding: 5px 15px;
+    }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+#registerForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(./assets/images/oneRing.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  width: 350px;
+  height: 450px;
+  label {
+    color: white;
+    text-decoration: underline;
+    text-shadow: black 0px 0px 10px;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0.774);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+  }
+}

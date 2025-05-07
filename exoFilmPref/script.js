@@ -7,8 +7,7 @@ lang.addEventListener("click", () => {
     lang.style.backgroundColor = "#f3c93e";
     lang.style.transition = "0.5s";
     document.body.style.fontFamily = "elfique";
-  }
-  else {
+  } else {
     lang.addEventListener;
     lang.style.left = "0";
     lang.textContent = "Fr";
@@ -17,3 +16,4 @@ lang.addEventListener("click", () => {
     document.body.style.fontFamily = "classique";
   }
 });
+
