@@ -152,10 +152,23 @@ body {
       text-shadow: black 0px 0px 10px;
     }
     input {
-      background-color: rgba(255, 255, 255, 0.774);
-      border: none;
-      border-radius: 15px;
-      padding: 5px 15px;
+    font-family: classique;
+    background-color: rgba(255, 255, 255, 0.774);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 15px;
+  }
+    input:last-child {
+    background: linear-gradient(to right,#ff9a28 50%,rgba(255, 255, 255, 0.774) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    }
+    input:last-child:hover {
+      background-position: left bottom;
+      color: #fac001;
+      text-shadow: black 0px 0px 10px;
     }
   }
   a {
@@ -186,9 +199,22 @@ body {
     text-shadow: black 0px 0px 10px;
   }
   input {
+    font-family: classique;
     background-color: rgba(255, 255, 255, 0.774);
     border: none;
     border-radius: 15px;
     padding: 5px 15px;
+  }
+  input:last-child {
+    background: linear-gradient(to right,#ff9a28 50%,rgba(255, 255, 255, 0.774) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+  }
+  input:last-child:hover {
+    background-position: left bottom;
+    color: #fac001;
+    text-shadow: black 0px 0px 10px;
   }
 }
