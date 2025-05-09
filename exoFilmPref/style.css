@@ -5,8 +5,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: classique;
+
   header {
     height: 20vh;
     background-color: black;
@@ -16,6 +18,7 @@ body {
     background-position: center;
     position: relative;
     text-align: center;
+
     h1 {
       padding: 2%;
       color: white;
@@ -23,19 +26,22 @@ body {
       font-size: 5rem;
       text-shadow: white 0px 0px 10px;
     }
+
     div {
       position: absolute;
       top: 5%;
-      right: 2%;
+      right: 5%;
       width: 70px;
       background-color: #484926b7;
       border-radius: 50px 50px;
       border-color: transparent;
+
       .switch {
         width: 50px;
         height: 30px;
         background-color: transparent;
         position: relative;
+
         button {
           cursor: pointer;
           position: absolute;
@@ -49,25 +55,45 @@ body {
         }
       }
     }
+
+    .off {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 5%;
+      right: 2px;
+      background-color: transparent;
+      border: none;
+      .fa-power-off {
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
+
   main {
     display: flex;
     flex-direction: column;
     padding: 50px;
     gap: 25px;
+
     h2 {
       font-size: 2rem;
       text-decoration: underline;
       text-align: center;
     }
+
     #afficheSynopsis {
       display: flex;
       flex-direction: row;
       gap: 35px;
       padding-top: 50px;
+
       img {
         width: 600px;
       }
+
       #synopsis {
         display: flex;
         flex-direction: column;
@@ -77,36 +103,43 @@ body {
         p {
           font-size: 1.5rem;
         }
+
         iframe {
           width: 660px;
           height: 415px;
         }
       }
     }
+
     #casting {
       padding-top: 50px;
+
       ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+
         li {
           display: flex;
           flex-direction: column;
           align-items: center;
           list-style: none;
           gap: 10px;
+
           img {
             border-radius: 10px;
           }
         }
       }
     }
+
     #commentaire {
       padding-top: 50px;
       display: flex;
       flex-direction: row;
       gap: 25px;
+
       div {
         p {
           padding-top: 15px;
@@ -121,6 +154,7 @@ body {
   font-family: elfique;
   src: url(./assets/font/elvish\ ring\ nfi.ttf);
 }
+
 @font-face {
   font-family: classique;
   src: url(./assets/font/EagleLake-Regular.ttf);
@@ -137,6 +171,7 @@ body {
   background-size: cover;
   border-radius: 15px;
   text-align: center;
+
   #loginForm {
     /* background-color: bisque; */
     display: flex;
@@ -146,36 +181,42 @@ body {
     gap: 15px;
     width: 350px;
     height: 450px;
+
     label {
       color: white;
       text-decoration: underline;
       text-shadow: black 0px 0px 10px;
     }
+
     input {
-    font-family: classique;
-    background-color: rgba(255, 255, 255, 0.774);
-    border: none;
-    border-radius: 15px;
-    padding: 5px 15px;
-  }
-    input:last-child {
-    background: linear-gradient(to right,#ff9a28 50%,rgba(255, 255, 255, 0.774) 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all 0.5s ease-out;
-    cursor: pointer;
+      font-family: classique;
+      background-color: rgba(255, 255, 255, 0.774);
+      border: none;
+      border-radius: 15px;
+      padding: 5px 15px;
     }
+
+    input:last-child {
+      background: linear-gradient(to right, #ff9a28 50%, rgba(255, 255, 255, 0.774) 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease-out;
+      cursor: pointer;
+    }
+
     input:last-child:hover {
       background-position: left bottom;
       color: #fac001;
       text-shadow: black 0px 0px 10px;
     }
   }
+
   a {
     color: white;
     text-decoration: none;
   }
 }
+
 #registerForm {
   position: absolute;
   top: 50%;
@@ -193,11 +234,13 @@ body {
   align-items: center;
   width: 350px;
   height: 450px;
+
   label {
     color: white;
     text-decoration: underline;
     text-shadow: black 0px 0px 10px;
   }
+
   input {
     font-family: classique;
     background-color: rgba(255, 255, 255, 0.774);
@@ -205,13 +248,15 @@ body {
     border-radius: 15px;
     padding: 5px 15px;
   }
+
   input:last-child {
-    background: linear-gradient(to right,#ff9a28 50%,rgba(255, 255, 255, 0.774) 50%);
+    background: linear-gradient(to right, #ff9a28 50%, rgba(255, 255, 255, 0.774) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
     cursor: pointer;
   }
+
   input:last-child:hover {
     background-position: left bottom;
     color: #fac001;

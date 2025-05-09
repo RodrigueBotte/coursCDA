@@ -6,6 +6,14 @@
     <title>Film Préféré</title>
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
+    <script>if (localStorage.getItem('Auth') === null) {
+        localStorage.setItem('Auth', "false");
+      }
+      if (localStorage.getItem('Auth') === "false") {
+        window.location.href = "/coursCDA/exoFilmPref/connexion.html";
+      }
+    </script>
+    <script src="https://kit.fontawesome.com/2ea3b82358.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -13,6 +21,7 @@
         <div>
             <div class="switch"><button class="lang">Fr</button></div>
         </div>
+        <button class="off"><i class="fa-solid fa-power-off"></i></button>
     </header>
     <main>
         <section id="afficheSynopsis">

@@ -6,6 +6,13 @@
     <title>Enregistrement</title>
     <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script>if (localStorage.getItem('Auth') === null) {
+        localStorage.setItem('Auth', "false");
+      }
+      if (localStorage.getItem('Auth') === "true") {
+        window.location.href = "/coursCDA/exoFilmPref/film.html";
+      }
+    </script>
 </head>
 <body>
     <form id="registerForm">

@@ -41,14 +41,17 @@ registerForm?.addEventListener("submit", (e) => {
   register();
 });
 
+// Mise en place de la connexion 
 const pseudoCo = document.getElementById("pseudoConnexion");
 const passwordCo = document.getElementById("passwordConnexion");
+
 function connexion() {
   let pseudoVerif = localStorage.getItem("pseudo");
   let passwordVerif = localStorage.getItem("password");
   if (pseudoVerif != pseudoCo.value || passwordVerif != passwordCo.value) {
     alert("Le mot de passe ou le pseudo est incorrect");
   } else {
+    localStorage.setItem('Auth', 'true');
     window.location.href = "/coursCDA/exoFilmPref/film.html";
   }
 }
@@ -58,3 +61,8 @@ document.getElementById("loginForm")?.addEventListener("submit", (e) => {
   connexion();
 });
 
+// Mise en place de la déconnexion
+document.querySelector('.off')?.addEventListener('click', ()=>{
+  localStorage.setItem('Auth', "false");
+  window.location.href = "/coursCDA/exoFilmPref/connexion.html";
+})
